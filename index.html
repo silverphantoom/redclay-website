@@ -15,6 +15,7 @@
 <meta property="og:description" content="Fast, honest garage door repair and installation. Locally owned in Auburn, AL. Call (850) 591-8939.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://redclaygarages.com/">
+<meta property="og:image" content="/images/og-image.jpg">
 <meta property="og:locale" content="en_US">
 
 <!-- Structured Data for Local Business SEO -->
@@ -84,6 +85,56 @@
     "addressRegion": "AL"
   },
   "description": "Professional garage door repair including spring replacement, track repair, opener repair, and full door installation in Auburn and Opelika, Alabama."
+}
+</script>
+
+<!-- FAQ schema for rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How quickly can you provide garage door repair in Auburn, AL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day appointments are often available in Auburn and nearby areas, depending on the repair type and schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are common signs my garage door spring is failing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common signs include a loud snap, a door that feels unusually heavy, jerky movement, and visible gaps in the spring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you service both garage door openers and full door systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Service includes opener diagnostics, sensor and remote issues, track and roller repairs, spring replacement, and full door installations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas near Auburn do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Service is available across Auburn, Opelika, and surrounding Lee County communities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get an estimate before work begins?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can request a free estimate before any repair or installation work is started."
+      }
+    }
+  ]
 }
 </script>
 
@@ -407,6 +458,31 @@ body {
   margin-top: 20px;
 }
 
+/* FAQ */
+.faq-list {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 28px;
+  max-width: 760px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+.faq-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.faq-item p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 /* FOOTER */
 footer {
   padding: 40px 24px;
@@ -492,7 +568,7 @@ footer a { color: var(--clay); text-decoration: none; }
       <span class="dot"></span>
       Serving Auburn & Opelika
     </div>
-    <h1>Garage doors fixed right, priced fair.</h1>
+    <h1>Garage Door Repair Auburn AL homeowners trust, fixed right and priced fair.</h1>
     <p>Fast, honest garage door repair and installation from a local Auburn engineer who shows up on time and tells you the truth about what your door needs.</p>
     <div class="hero-actions">
       <a href="tel:+18505918939" class="btn-primary">
@@ -660,6 +736,30 @@ footer a { color: var(--clay); text-decoration: none; }
     <div class="section-label">Contact Us</div>
     <h2 class="section-title">Request service</h2>
     <p class="section-subtitle">Tell us what you need and we'll get back to you shortly.</p>
+    <div class="section-label">FAQ</div>
+    <h3 class="section-title" style="font-size: clamp(24px, 3vw, 30px);">Common Auburn garage door questions</h3>
+    <div class="faq-list">
+      <article class="faq-item">
+        <h3>How quickly can you provide garage door repair in Auburn, AL?</h3>
+        <p>Same-day appointments are often available in Auburn and nearby areas, depending on the repair type and schedule.</p>
+      </article>
+      <article class="faq-item">
+        <h3>What are common signs my garage door spring is failing?</h3>
+        <p>Common signs include a loud snap, a door that feels unusually heavy, jerky movement, and visible gaps in the spring.</p>
+      </article>
+      <article class="faq-item">
+        <h3>Do you service both garage door openers and full door systems?</h3>
+        <p>Yes. Service includes opener diagnostics, sensor and remote issues, track and roller repairs, spring replacement, and full door installations.</p>
+      </article>
+      <article class="faq-item">
+        <h3>What areas near Auburn do you serve?</h3>
+        <p>Service is available across Auburn, Opelika, and surrounding Lee County communities.</p>
+      </article>
+      <article class="faq-item">
+        <h3>Can I get an estimate before work begins?</h3>
+        <p>Yes. You can request a free estimate before any repair or installation work is started.</p>
+      </article>
+    </div>
     <form class="contact-form" action="https://formspree.io/f/xpqjpjbj" method="POST">
       <div class="contact-grid">
         <div class="contact-field">
