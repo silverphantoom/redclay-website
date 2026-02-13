@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Clay Garage Services | Garage Door Repair & Installation in Auburn & Opelika, AL</title>
+<meta name="description" content="Fast, honest garage door repair and installation in Auburn, Opelika, and Lee County, AL. Locally owned by Auburn engineering student Peyton Paske. Same-day service available. Call (850) 591-8939.">
+<meta name="keywords" content="garage door repair Auburn AL, garage door installation Opelika, garage door spring replacement Auburn Alabama, garage door opener repair Lee County, Red Clay Garage Services">
+<meta name="author" content="Red Clay Garage Services LLC">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://redclaygarages.com/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Red Clay Garage Services | Auburn & Opelika Garage Door Repair">
+<meta property="og:description" content="Fast, honest garage door repair and installation. Locally owned in Auburn, AL. Call (850) 591-8939.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://redclaygarages.com/">
+<meta property="og:locale" content="en_US">
+
+<!-- Structured Data for Local Business SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Red Clay Garage Services",
+  "description": "Professional garage door repair and installation serving Auburn, Opelika, and Lee County, Alabama.",
+  "url": "https://redclaygarages.com",
+  "telephone": "+18505918939",
+  "email": "peytonpaske@icloud.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Auburn",
+    "addressRegion": "AL",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Auburn", "addressRegion": "AL"},
+    {"@type": "City", "name": "Opelika", "addressRegion": "AL"},
+    {"@type": "AdministrativeArea", "name": "Lee County", "addressRegion": "AL"}
+  ],
+  "serviceType": [
+    "Garage Door Repair",
+    "Garage Door Installation",
+    "Garage Door Spring Replacement",
+    "Garage Door Opener Repair",
+    "Garage Door Opener Installation",
+    "Garage Door Maintenance",
+    "Garage Door Track Repair",
+    "Garage Door Roller Replacement"
+  ],
+  "priceRange": "$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "07:00",
+    "closes": "19:00"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Peyton Paske",
+    "jobTitle": "Owner"
+  },
+  "sameAs": [
+    "https://www.facebook.com/redclaygarageservices",
+    "https://nextdoor.com/pages/red-clay-garage-services-auburn-al/",
+    "https://www.yelp.com/biz/red-clay-garage-services-auburn"
+  ]
+}
+</script>
+
+<!-- Service schema for rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Garage Door Repair",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Red Clay Garage Services"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Auburn",
+    "addressRegion": "AL"
+  },
+  "description": "Professional garage door repair including spring replacement, track repair, opener repair, and full door installation in Auburn and Opelika, Alabama."
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --clay: #a63d2b;
+  --clay-light: #c75a3f;
+  --clay-dark: #7a2d1e;
+  --warm-white: #faf8f5;
+  --cream: #f2ede6;
+  --charcoal: #1c1a17;
+  --dark: #262320;
+  --muted: #8a8580;
+  --text: #3d3a36;
+  --border: #e2ddd6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Instrument Sans', -apple-system, system-ui, sans-serif;
+  color: var(--text);
+  background: var(--warm-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* HEADER / NAV */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(250,248,245,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: box-shadow 0.3s;
+}
+.site-header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+
+.nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  padding: 14px 24px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+.logo {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px; font-weight: 700;
+  color: var(--charcoal);
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+.logo span { color: var(--clay); }
+
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+  font-size: 13px; font-weight: 600; color: var(--muted);
+  text-decoration: none; letter-spacing: 0.3px;
+  text-transform: uppercase; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--charcoal); }
+
+.nav-cta {
+  background: var(--clay) !important; color: #fff !important;
+  padding: 10px 22px !important; border-radius: 8px;
+  text-transform: uppercase !important; font-size: 12px !important;
+  font-weight: 700 !important; letter-spacing: 0.5px !important;
+  transition: background 0.2s !important;
+}
+.nav-cta:hover { background: var(--clay-dark) !important; }
+
+.mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.mobile-toggle span { display: block; width: 22px; height: 2px; background: var(--charcoal); margin: 5px 0; transition: 0.3s; }
+
+/* HERO */
+.hero {
+  padding: 140px 24px 80px;
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--cream); border: 1px solid var(--border);
+  padding: 6px 14px; border-radius: 100px;
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  margin-bottom: 24px; letter-spacing: 0.3px;
+}
+.hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; }
+
+.hero h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.15; color: var(--charcoal);
+  margin-bottom: 20px; letter-spacing: -0.5px;
+}
+
+.hero p {
+  font-size: 17px; line-height: 1.7; color: var(--muted);
+  margin-bottom: 32px; max-width: 480px;
+}
+
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--clay); color: #fff;
+  padding: 14px 28px; border-radius: 10px;
+  font-size: 15px; font-weight: 600;
+  text-decoration: none; transition: all 0.2s;
+  border: none; cursor: pointer;
+}
+.btn-primary:hover { background: var(--clay-dark); transform: translateY(-1px); }
+
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: var(--charcoal);
+  padding: 14px 28px; border-radius: 10px;
+  font-size: 15px; font-weight: 600;
+  text-decoration: none; border: 1.5px solid var(--border);
+  transition: all 0.2s;
+}
+.btn-secondary:hover { border-color: var(--charcoal); }
+
+.hero-visual {
+  background: var(--cream); border-radius: 20px;
+  padding: 40px; position: relative; overflow: hidden;
+  border: 1px solid var(--border);
+  min-height: 380px; display: flex; flex-direction: column; justify-content: center;
+}
+
+.hero-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.hero-stat {
+  background: rgba(255,255,255,0.8); border-radius: 12px;
+  padding: 20px; text-align: center;
+}
+.hero-stat .num {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px; font-weight: 700; color: var(--clay);
+  line-height: 1;
+}
+.hero-stat .label { font-size: 12px; color: var(--muted); margin-top: 6px; font-weight: 500; }
+
+/* TRUST BAR */
+.trust-bar {
+  padding: 40px 24px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.trust-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; justify-content: center; gap: 48px; flex-wrap: wrap;
+}
+.trust-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 14px; font-weight: 500; color: var(--muted);
+}
+.trust-icon { font-size: 20px; }
+
+/* SECTIONS */
+.section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+.section-dark { background: var(--charcoal); color: #fff; }
+.section-cream { background: var(--cream); }
+
+.section-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--clay);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(26px, 3.5vw, 36px);
+  color: var(--charcoal); line-height: 1.2;
+  margin-bottom: 16px; letter-spacing: -0.3px;
+}
+
+.section-subtitle {
+  font-size: 16px; color: var(--muted);
+  max-width: 560px; line-height: 1.7;
+  margin-bottom: 48px;
+}
+
+/* SERVICES */
+.services-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px;
+  transition: all 0.25s;
+}
+.service-card:hover {
+  border-color: var(--clay);
+  box-shadow: 0 4px 20px rgba(166,61,43,0.08);
+  transform: translateY(-2px);
+}
+
+.service-icon { font-size: 28px; margin-bottom: 14px; }
+
+.service-card h3 {
+  font-size: 17px; font-weight: 700; color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.service-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+/* WHY US */
+.why-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+
+.why-card {
+  padding: 28px; border-radius: 14px;
+  background: var(--cream); border: 1px solid var(--border);
+}
+.why-card h3 {
+  font-size: 16px; font-weight: 700; color: var(--charcoal);
+  margin-bottom: 6px;
+}
+.why-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+/* TESTIMONIALS */
+.testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.testimonial {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 14px; padding: 28px;
+}
+.testimonial blockquote {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px; line-height: 1.7;
+  color: var(--text); font-style: italic;
+  margin-bottom: 16px;
+}
+.testimonial cite {
+  font-style: normal; font-size: 13px;
+  font-weight: 600; color: var(--muted);
+}
+.stars { color: var(--clay); font-size: 14px; margin-bottom: 12px; letter-spacing: 2px; }
+
+/* SERVICE AREAS */
+.areas-container { display: flex; flex-wrap: wrap; gap: 10px; }
+.area-tag {
+  background: var(--cream); border: 1px solid var(--border);
+  padding: 8px 18px; border-radius: 100px;
+  font-size: 13px; font-weight: 500; color: var(--text);
+}
+
+/* CTA SECTION */
+.cta-section {
+  background: var(--charcoal);
+  padding: 80px 24px;
+  text-align: center;
+}
+.cta-section .section-title { color: #fff; }
+.cta-section p { color: rgba(255,255,255,0.6); margin: 0 auto 32px; max-width: 480px; line-height: 1.7; }
+.cta-phone {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(28px, 5vw, 44px);
+  color: var(--clay-light); font-weight: 700;
+  text-decoration: none; display: block;
+  margin-bottom: 24px; transition: color 0.2s;
+}
+.cta-phone:hover { color: #fff; }
+
+/* FOOTER */
+footer {
+  padding: 40px 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+footer p { font-size: 13px; color: var(--muted); }
+footer a { color: var(--clay); text-decoration: none; }
+
+/* MOBILE STICKY CTA */
+.mobile-cta {
+  display: none; position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--clay); padding: 14px 24px;
+  z-index: 100;
+}
+.mobile-cta a {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  color: #fff; text-decoration: none;
+  font-size: 16px; font-weight: 700;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; gap: 32px; padding: 110px 20px 60px; }
+  .hero-visual { min-height: auto; padding: 24px; }
+  .nav-links { display: none; }
+  .mobile-toggle { display: block; }
+  .nav-links.open {
+    display: flex; flex-direction: column;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--warm-white); padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    gap: 16px;
+  }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .trust-inner { gap: 24px; }
+  .mobile-cta { display: block; }
+  body { padding-bottom: 60px; }
+  .section { padding: 60px 20px; }
+  .services-grid { grid-template-columns: 1fr; }
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate { opacity: 0; }
+.animate.visible { animation: fadeUp 0.6s ease-out forwards; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <nav class="nav-inner">
+    <a href="#" class="logo">Red Clay <span>Garages</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Areas</a>
+      <a href="tel:+18505918939" class="nav-cta">Call Now</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Serving Auburn & Opelika
+    </div>
+    <h1>Garage doors fixed right, priced fair.</h1>
+    <p>Fast, honest garage door repair and installation from a local Auburn engineer who shows up on time and tells you the truth about what your door needs.</p>
+    <div class="hero-actions">
+      <a href="tel:+18505918939" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (850) 591-8939
+      </a>
+      <a href="#services" class="btn-secondary">View Services</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-stat-grid">
+      <div class="hero-stat">
+        <div class="num">Same</div>
+        <div class="label">Day Service Available</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">100%</div>
+        <div class="label">Locally Owned</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">$0</div>
+        <div class="label">Hidden Fees</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">5★</div>
+        <div class="label">Customer Reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="trust-icon">🔧</span> Licensed & Insured</div>
+    <div class="trust-item"><span class="trust-icon">⚡</span> Same-Day Appointments</div>
+    <div class="trust-item"><span class="trust-icon">💰</span> Transparent Pricing</div>
+    <div class="trust-item"><span class="trust-icon">📍</span> Auburn Local</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="section-label">What We Do</div>
+  <h2 class="section-title">Garage Door Services</h2>
+  <p class="section-subtitle">From a squeaky roller to a full door replacement — we handle it all with professional tools and honest pricing.</p>
+
+  <div class="services-grid">
+    <div class="service-card animate">
+      <div class="service-icon">🔩</div>
+      <h3>Garage Door Repair</h3>
+      <p>Broken springs, noisy tracks, stuck doors, bent panels — we diagnose the problem fast and fix it right the first time. Most repairs completed same day.</p>
+    </div>
+    <div class="service-card animate">
+      <div class="service-icon">🚪</div>
+      <h3>New Door Installation</h3>
+      <p>Upgrade your home's curb appeal and security with a professionally installed garage door. We handle single-car, double-car, and custom sizes.</p>
+    </div>
+    <div class="service-card animate">
+      <div class="service-icon">⚙️</div>
+      <h3>Spring & Cable Replacement</h3>
+      <p>Torsion springs, extension springs, and cables — these are under extreme tension and dangerous to DIY. We replace them safely with professional-grade parts.</p>
+    </div>
+    <div class="service-card animate">
+      <div class="service-icon">📡</div>
+      <h3>Opener Repair & Installation</h3>
+      <p>Motors, keypads, remotes, sensors, wall buttons — we repair and install all major garage door opener brands and models.</p>
+    </div>
+    <div class="service-card animate">
+      <div class="service-icon">🛤️</div>
+      <h3>Track & Roller Service</h3>
+      <p>Misaligned tracks, worn rollers, and loose hardware cause noise and premature wear. We straighten, replace, and lubricate everything back to smooth operation.</p>
+    </div>
+    <div class="service-card animate">
+      <div class="service-icon">🛡️</div>
+      <h3>Maintenance & Tune-Ups</h3>
+      <p>Annual garage door maintenance prevents costly breakdowns. We inspect, tighten, lubricate, and test your entire door system so it runs safely and quietly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / WHY US -->
+<section class="section-cream" id="about">
+  <div class="section" style="padding-top: 80px; padding-bottom: 80px;">
+    <div class="section-label">Why Red Clay</div>
+    <h2 class="section-title">Built on honest work</h2>
+    <p class="section-subtitle">I'm Peyton Paske — a mechanical engineering student at Auburn University and the owner of Red Clay Garage Services. I started this business to bring real craftsmanship and fair pricing to garage door service in our community.</p>
+
+    <div class="why-grid">
+      <div class="why-card animate">
+        <h3>🏠 Locally Owned & Operated</h3>
+        <p>I live in Auburn. I know the neighborhoods, the weather, and what your home needs. When you call, you get me — not a call center.</p>
+      </div>
+      <div class="why-card animate">
+        <h3>💵 No Hidden Fees</h3>
+        <p>I'll tell you what's wrong, what it costs, and whether it actually needs fixing right now. No pressure, no upselling, no surprises on the bill.</p>
+      </div>
+      <div class="why-card animate">
+        <h3>⏰ Fast & Reliable</h3>
+        <p>Same-day appointments when available. I show up on time, work efficiently, and clean up after myself. Your time matters.</p>
+      </div>
+      <div class="why-card animate">
+        <h3>🎓 Engineering Precision</h3>
+        <p>Studying mechanical engineering at Auburn means I understand exactly how your door system works — springs, tension, balance, and all the forces involved.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="section-label">Customer Reviews</div>
+  <h2 class="section-title">What our neighbors say</h2>
+  <p class="section-subtitle">Real reviews from Auburn and Opelika homeowners.</p>
+
+  <div class="testimonial-grid">
+    <div class="testimonial animate">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Peyton tightened all the bolts and lubricated all the moving parts. He showed me what to watch out for but didn't pressure me. I would highly recommend Peyton with Red Clay Garage Doors."</blockquote>
+      <cite>— Willow Creek Neighbor, via Nextdoor</cite>
+    </div>
+    <div class="testimonial animate">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Very pleasant and polite young man. The garage door was not broken, but it had gotten louder and a bit shaky. He showed me it may need a few parts replaced but did not pressure me to do so now."</blockquote>
+      <cite>— Auburn Homeowner, via Nextdoor</cite>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="section-cream" id="areas">
+  <div class="section" style="padding-top: 80px; padding-bottom: 80px;">
+    <div class="section-label">Service Area</div>
+    <h2 class="section-title">Proudly serving East Alabama</h2>
+    <p class="section-subtitle">We provide garage door repair and installation throughout Lee County and the surrounding area.</p>
+    <div class="areas-container">
+      <span class="area-tag">Auburn, AL</span>
+      <span class="area-tag">Opelika, AL</span>
+      <span class="area-tag">Lee County</span>
+      <span class="area-tag">Smiths Station</span>
+      <span class="area-tag">Salem, AL</span>
+      <span class="area-tag">Beauregard</span>
+      <span class="area-tag">Loachapoka</span>
+      <span class="area-tag">Notasulga</span>
+      <span class="area-tag">Phenix City</span>
+      <span class="area-tag">Valley, AL</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="section-label" style="color: var(--clay-light);">Ready to Get Started?</div>
+  <h2 class="section-title" style="color: #fff;">Your garage door problem<br>ends with one call.</h2>
+  <p>Free estimates. Honest pricing. Fast service. Call or text Peyton directly.</p>
+  <a href="tel:+18505918939" class="cta-phone">(850) 591-8939</a>
+  <a href="/cdn-cgi/l/email-protection#1a6a7f636e75746a7b69717f5a737976756f7e34797577" class="btn-primary" style="display: inline-flex;">
+    Email Us
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 Red Clay Garage Services LLC &nbsp;·&nbsp; Auburn, Alabama &nbsp;·&nbsp; redclaygarages.com</p>
+  <p style="margin-top: 8px;">
+    <a href="tel:+18505918939">(850) 591-8939</a> &nbsp;·&nbsp;
+    <a href="/cdn-cgi/l/email-protection#e9998c909d868799889a828ca9808a85869c8dc78a8684"><span class="__cf_email__" data-cfemail="c6b6a3bfb2a9a8b6a7b5ada386afa5aaa9b3a2e8a5a9ab">[email&#160;protected]</span></a>
+  </p>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-cta">
+  <a href="tel:+18505918939">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call Now — (850) 591-8939
+  </a>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Mobile nav toggle
+document.getElementById('mobileToggle').addEventListener('click', function() {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// Close mobile nav on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+
+// Header scroll effect
+window.addEventListener('scroll', function() {
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((ent
