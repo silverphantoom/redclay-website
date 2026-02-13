@@ -249,9 +249,10 @@ body {
 .trust-icon { font-size: 20px; }
 
 /* SECTIONS */
-.section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+.section { padding: 60px 24px; max-width: 1100px; margin: 0 auto; }
 .section-dark { background: var(--charcoal); color: #fff; }
 .section-cream { background: var(--cream); }
+.section-cream .section { padding-top: 60px; padding-bottom: 60px; }
 
 .section-label {
   font-size: 11px; font-weight: 700; letter-spacing: 2px;
@@ -269,7 +270,7 @@ body {
 .section-subtitle {
   font-size: 16px; color: var(--muted);
   max-width: 560px; line-height: 1.7;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 /* SERVICES */
@@ -342,7 +343,7 @@ body {
 /* CTA SECTION */
 .cta-section {
   background: var(--charcoal);
-  padding: 80px 24px;
+  padding: 60px 24px;
   text-align: center;
 }
 .cta-section .section-title { color: #fff; }
@@ -379,24 +380,29 @@ footer a { color: var(--clay); text-decoration: none; }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .hero { grid-template-columns: 1fr; gap: 32px; padding: 110px 20px 60px; }
+  .hero { grid-template-columns: 1fr; gap: 32px; padding: 100px 20px 40px; }
   .hero-visual { min-height: auto; padding: 24px; }
-  .nav-links { display: none; }
-  .mobile-toggle { display: block; }
+  .nav-links { display: none !important; }
   .nav-links.open {
-    display: flex; flex-direction: column;
+    display: flex !important; flex-direction: column;
     position: absolute; top: 100%; left: 0; right: 0;
     background: var(--warm-white); padding: 20px 24px;
     border-bottom: 1px solid var(--border);
-    gap: 16px;
+    gap: 16px; z-index: 101;
   }
+  .mobile-toggle { display: block; }
   .testimonial-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .trust-inner { gap: 24px; }
   .mobile-cta { display: block; }
   body { padding-bottom: 60px; }
-  .section { padding: 60px 20px; }
+  .section { padding: 40px 20px; }
+  .section-cream .section, .section-cream > .section { padding-top: 40px; padding-bottom: 40px; }
   .services-grid { grid-template-columns: 1fr; }
+  .section-subtitle { margin-bottom: 28px; }
+  .trust-bar { padding: 24px 20px; }
+  .cta-section { padding: 50px 20px; }
+  footer { padding: 28px 20px; }
 }
 
 /* ANIMATIONS */
@@ -518,7 +524,7 @@ footer a { color: var(--clay); text-decoration: none; }
 
 <!-- ABOUT / WHY US -->
 <section class="section-cream" id="about">
-  <div class="section" style="padding-top: 80px; padding-bottom: 80px;">
+  <div class="section">
     <div class="section-label">Why Red Clay</div>
     <h2 class="section-title">Built on honest work</h2>
     <p class="section-subtitle">I'm Peyton Paske — a mechanical engineering student at Auburn University and the owner of Red Clay Garage Services. I started this business to bring real craftsmanship and fair pricing to garage door service in our community.</p>
@@ -566,7 +572,7 @@ footer a { color: var(--clay); text-decoration: none; }
 
 <!-- SERVICE AREAS -->
 <section class="section-cream" id="areas">
-  <div class="section" style="padding-top: 80px; padding-bottom: 80px;">
+  <div class="section">
     <div class="section-label">Service Area</div>
     <h2 class="section-title">Proudly serving East Alabama</h2>
     <p class="section-subtitle">We provide garage door repair and installation throughout Lee County and the surrounding area.</p>
