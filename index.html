@@ -357,6 +357,56 @@ body {
 }
 .cta-phone:hover { color: #fff; }
 
+/* CONTACT FORM */
+.contact-form {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  max-width: 760px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contact-field.full { grid-column: 1 / -1; }
+.contact-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--clay);
+  box-shadow: 0 0 0 3px rgba(166, 61, 43, 0.12);
+}
+.contact-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.contact-form .btn-primary {
+  margin-top: 20px;
+}
+
 /* FOOTER */
 footer {
   padding: 40px 24px;
@@ -399,7 +449,9 @@ footer a { color: var(--clay); text-decoration: none; }
   .section { padding: 40px 20px; }
   .section-cream .section, .section-cream > .section { padding-top: 40px; padding-bottom: 40px; }
   .services-grid { grid-template-columns: 1fr; }
-  .section-subtitle { margin-bottom: 28px; }
+  .section-subtitle { margin-bottom: 32px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-form { padding: 22px; }
   .trust-bar { padding: 24px 20px; }
   .cta-section { padding: 50px 20px; }
   footer { padding: 28px 20px; }
@@ -600,6 +652,46 @@ footer a { color: var(--clay); text-decoration: none; }
   <a href="/cdn-cgi/l/email-protection#1a6a7f636e75746a7b69717f5a737976756f7e34797577" class="btn-primary" style="display: inline-flex;">
     Email Us
   </a>
+</section>
+
+<!-- CONTACT -->
+<section class="section-cream" id="contact">
+  <div class="section">
+    <div class="section-label">Contact Us</div>
+    <h2 class="section-title">Request service</h2>
+    <p class="section-subtitle">Tell us what you need and we'll get back to you shortly.</p>
+    <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+      <div class="contact-grid">
+        <div class="contact-field">
+          <label for="contact-name">Name *</label>
+          <input id="contact-name" name="name" type="text" required>
+        </div>
+        <div class="contact-field">
+          <label for="contact-phone">Phone *</label>
+          <input id="contact-phone" name="phone" type="tel" required>
+        </div>
+        <div class="contact-field full">
+          <label for="contact-email">Email</label>
+          <input id="contact-email" name="email" type="email">
+        </div>
+        <div class="contact-field full">
+          <label for="contact-service">Service needed</label>
+          <select id="contact-service" name="service_needed">
+            <option value="Repair">Repair</option>
+            <option value="Installation">Installation</option>
+            <option value="Maintenance">Maintenance</option>
+            <option value="Opener">Opener</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="contact-field full">
+          <label for="contact-description">Brief description</label>
+          <textarea id="contact-description" name="description"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </div>
 </section>
 
 <!-- FOOTER -->
